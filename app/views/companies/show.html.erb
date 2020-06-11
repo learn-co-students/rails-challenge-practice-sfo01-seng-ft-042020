@@ -1,0 +1,9 @@
+<h1><%= @company.name %></h1>
+<h2>Employee names: </h2>
+<% @company.employees.each do |employee| %>
+    <%= link_to employee.name, employee %><br>
+<% end %>
+<h2>Offices: </h2>
+<% @company.offices.each do |office| %>
+    <%= office.building.name %><br>
+<% end %>

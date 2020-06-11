@@ -1,0 +1,9 @@
+<h1>Building name: <%= @building.name %></h1>
+<h2>Country: <%= @building.country %></h2>
+<h3>Address: <%= @building.address %></h3>
+<h3>Rent: <%= @building.rent_per_floor %></h3>
+<h3>Number of floors: <%= @building.number_of_floors %></h3>
+<% @building.companies.each do |company| %>
+    <%= link_to company.name, company %><br>
+<% end %>
+
